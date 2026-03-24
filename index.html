@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神秘星空占卜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ 神秘星空占卜 ✨</h1>
+            <p>閉上眼睛，在心中默念你想問的問題，然後點擊下方按鈕，宇宙將給予你指引... 🌌</p>
+        </header>
+
+        <main>
+            <div id="draw-area">
+                <button id="draw-btn" class="mystic-btn">🔮 抽取今日運勢</button>
+            </div>
+            
+            <div id="loading-area" class="hidden">
+                <div class="loader"></div>
+                <p>正在與宇宙能量共鳴...</p>
+            </div>
+
+            <div id="result-area" class="hidden">
+                <h2 id="result-title">大吉</h2>
+                <div class="result-details">
+                    <p><strong>💼 工作：</strong><span id="result-work"></span></p>
+                    <p><strong>📚 學業：</strong><span id="result-study"></span></p>
+                    <p><strong>❤️ 愛情：</strong><span id="result-love"></span></p>
+                    <p><strong>💰 金錢：</strong><span id="result-money"></span></p>
+                </div>
+                <div class="result-summary">
+                    <p id="result-desc"></p>
+                </div>
+                <p id="result-quote" class="quote"></p>
+                <button id="reset-btn" class="mystic-btn outline">🔄 再占卜一次</button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>僅供娛樂，命運掌握在自己手中 💫</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
